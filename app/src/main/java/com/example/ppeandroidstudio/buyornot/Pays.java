@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Pays {
     private String id_pays;
     private String libelle_pays;

@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Conditionnement {
     private int id_conditionnement;
     private String libelle_conditionnement;

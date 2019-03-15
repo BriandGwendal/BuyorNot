@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Magasin {
     private int id_magasin;
     private String code_magasin;

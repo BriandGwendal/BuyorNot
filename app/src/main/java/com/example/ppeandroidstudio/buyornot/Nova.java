@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Nova {
     private String code_nova;
     private String libelle_nova;

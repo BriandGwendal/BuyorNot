@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Code_Emballeur {
     private int id_code_Emballeur;
     private String libelle_code_Emballeur;

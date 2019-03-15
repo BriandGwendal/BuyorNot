@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Lieux_De_Fabrication {
     private int id_lieux_De_Fabrication;
     private String code_lieux_De_Fabrication;

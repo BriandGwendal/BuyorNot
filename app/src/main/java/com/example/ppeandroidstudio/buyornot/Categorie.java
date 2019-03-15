@@ -1,3 +1,5 @@
+package com.example.ppeandroidstudio.buyornot;
+
 public class Categorie {
     private int id_categorie;
     private String code_categorie;
