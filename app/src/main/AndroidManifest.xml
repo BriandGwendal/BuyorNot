@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListerActivity" />
+        <activity android:name=".ConsulterActivity" />
+        <activity android:name=".AjouterActivity"></activity>
     </application>
 
 </manifest>
