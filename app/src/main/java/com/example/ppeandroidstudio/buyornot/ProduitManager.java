@@ -8,11 +8,13 @@ import android.database.sqlite.SQLiteDatabase;
 public class ProduitManager {
     private static final String TABLE_NAME = "produit";
     public static final String KEY_ID_PRODUIT="id_produit";
-    public static final String KEY_LIBELLE_PRODUIT="nom_animal";
+    public static final String KEY_LIBELLE_PRODUIT="libelle_produit";
+    public static final String KEY_CODE_BARRE_PRODUIT="codeBarre_produit";
     public static final String CREATE_TABLE_ANIMAL = "CREATE TABLE " + TABLE_NAME +
             " (" +
             " " + KEY_ID_PRODUIT + " INTEGER primary key," +
             " " + KEY_LIBELLE_PRODUIT + " TEXT" +
+            " " + KEY_CODE_BARRE_PRODUIT + " TEXT" +
             ");";
     private MySQLite maBaseSQLite; // notre gestionnaire du fichier SQLite
     private SQLiteDatabase db;
@@ -40,6 +42,7 @@ public class ProduitManager {
 
         ContentValues values = new ContentValues();
         values.put(KEY_LIBELLE_PRODUIT, produit.getLibelle_produit());
+        values.put(KEY_CODE_BARRE_PRODUIT, produit.getCode_barre_produit());
 
         // insert() retourne l'id du nouvel enregistrement inséré, ou -1 en cas d'erreur
         return db.insert(TABLE_NAME,null, values);
