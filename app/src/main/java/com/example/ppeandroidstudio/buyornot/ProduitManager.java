@@ -117,7 +117,7 @@ public class ProduitManager {
         return db.delete(TABLE_NAME, where, whereArgs);
     }
 
-    public Produit getProduit(int id) {
+    public Produit getProduit(long id) {
         // Retourne le produit dont l'id est passé en paramètre
 
         Produit p = new Produit();

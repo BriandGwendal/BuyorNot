@@ -42,12 +42,12 @@
                 android:text="Libelle :" />
 
             <EditText
-                android:id="@+id/editText12"
+                android:id="@+id/editLibelle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -308,6 +308,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="addProduct"
             android:text="Ajouter" />
 
     </LinearLayout>
