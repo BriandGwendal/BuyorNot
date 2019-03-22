@@ -9,7 +9,7 @@ public class ProduitManager {
     private static final String TABLE_NAME = "produit";
     public static final String KEY_ID_PRODUIT="id_produit";
     public static final String KEY_LIBELLE_PRODUIT="nom_animal";
-    public static final String CREATE_TABLE_ANIMAL = "CREATE TABLE " + TABLE_NAME +
+    public static final String CREATE_TABLE_PRODUIT = "CREATE TABLE " + TABLE_NAME +
             " (" +
             " " + KEY_ID_PRODUIT + " INTEGER primary key," +
             " " + KEY_LIBELLE_PRODUIT + " TEXT" +
@@ -68,7 +68,7 @@ public class ProduitManager {
         return db.delete(TABLE_NAME, where, whereArgs);
     }
 
-    public Produit getProduit(int id) {
+    public Produit getProduit(long id) {
         // Retourne le produit dont l'id est passé en paramètre
 
         Produit p = new Produit();
