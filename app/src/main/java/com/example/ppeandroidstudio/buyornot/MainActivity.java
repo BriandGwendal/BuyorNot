@@ -24,4 +24,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
+    public void afficherLister(View view){
+        Intent intent = new Intent(this, ListerActivity.class);
+        Bundle bundle = new Bundle();
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 }
