@@ -6,21 +6,21 @@ public class Produit {
     private String code_barre_produit;
     private int quantite_produit;
     private String ingredient_produit;
-    private String energie_produit;
-    private String matiere_grasse_produit;
-    private String acides_gras_produit;
-    private String glucides_produit;
-    private String sucres_produit;
-    private String proteine_produit;
-    private String sel_produit;
-    private String sodium_produit;
+    private int energie_produit;
+    private int matiere_grasse_produit;
+    private int acides_gras_produit;
+    private int glucides_produit;
+    private int sucres_produit;
+    private int proteine_produit;
+    private int sel_produit;
+    private int sodium_produit;
     private String nutriscore_produit;
     private String lien_produit;
 
     public Produit() {
     }
 
-    public Produit(int id_produit, String libelle_produit, String code_barre_produit, int quantite_produit, String ingredient_produit, String energie_produit, String matiere_grasse_produit, String acides_gras_produit, String glucides_produit, String sucres_produit, String proteine_produit, String sel_produit, String sodium_produit, String nutriscore_produit, String lien_produit) {
+    public Produit(int id_produit, String libelle_produit, String code_barre_produit, int quantite_produit, String ingredient_produit, int energie_produit, int matiere_grasse_produit, int acides_gras_produit, int glucides_produit, int sucres_produit, int proteine_produit, int sel_produit, int sodium_produit, String nutriscore_produit, String lien_produit) {
         this.id_produit = id_produit;
         this.libelle_produit = libelle_produit;
         this.code_barre_produit = code_barre_produit;
@@ -78,67 +78,67 @@ public class Produit {
         this.ingredient_produit = ingredient_produit;
     }
 
-    public String getEnergie_produit() {
+    public int getEnergie_produit() {
         return energie_produit;
     }
 
-    public void setEnergie_produit(String energie_produit) {
+    public void setEnergie_produit(int energie_produit) {
         this.energie_produit = energie_produit;
     }
 
-    public String getMatiere_grasse_produit() {
+    public int getMatiere_grasse_produit() {
         return matiere_grasse_produit;
     }
 
-    public void setMatiere_grasse_produit(String matiere_grasse_produit) {
+    public void setMatiere_grasse_produit(int matiere_grasse_produit) {
         this.matiere_grasse_produit = matiere_grasse_produit;
     }
 
-    public String getAcides_gras_produit() {
+    public int getAcides_gras_produit() {
         return acides_gras_produit;
     }
 
-    public void setAcides_gras_produit(String acides_gras_produit) {
+    public void setAcides_gras_produit(int acides_gras_produit) {
         this.acides_gras_produit = acides_gras_produit;
     }
 
-    public String getGlucides_produit() {
+    public int getGlucides_produit() {
         return glucides_produit;
     }
 
-    public void setGlucides_produit(String glucides_produit) {
+    public void setGlucides_produit(int glucides_produit) {
         this.glucides_produit = glucides_produit;
     }
 
-    public String getSucres_produit() {
+    public int getSucres_produit() {
         return sucres_produit;
     }
 
-    public void setSucres_produit(String sucres_produit) {
+    public void setSucres_produit(int sucres_produit) {
         this.sucres_produit = sucres_produit;
     }
 
-    public String getProteine_produit() {
+    public int getProteine_produit() {
         return proteine_produit;
     }
 
-    public void setProteine_produit(String proteine_produit) {
+    public void setProteine_produit(int proteine_produit) {
         this.proteine_produit = proteine_produit;
     }
 
-    public String getSel_produit() {
+    public int getSel_produit() {
         return sel_produit;
     }
 
-    public void setSel_produit(String sel_produit) {
+    public void setSel_produit(int sel_produit) {
         this.sel_produit = sel_produit;
     }
 
-    public String getSodium_produit() {
+    public int getSodium_produit() {
         return sodium_produit;
     }
 
-    public void setSodium_produit(String sodium_produit) {
+    public void setSodium_produit(int sodium_produit) {
         this.sodium_produit = sodium_produit;
     }
 
