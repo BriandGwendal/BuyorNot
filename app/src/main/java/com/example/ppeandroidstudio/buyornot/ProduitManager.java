@@ -22,21 +22,21 @@ public class ProduitManager {
     public static final String KEY_SODIUM_PRODUIT="sodium_produit";
     public static final String KEY_LIEN_PRODUIT="lien_produit";
 
-    public static final String CREATE_TABLE_ANIMAL = "CREATE TABLE " + TABLE_NAME +
+    public static final String CREATE_TABLE_PRODUIT = "CREATE TABLE " + TABLE_NAME +
             " (" +
             " " + KEY_ID_PRODUIT + " INTEGER primary key," +
-            " " + KEY_LIBELLE_PRODUIT + " TEXT" +
-            " " + KEY_CODE_BARRE_PRODUIT + " INT" +
-            " " + KEY_QUANTITE_PRODUIT + " INT" +
-            " " + KEY_INGREDIENT_PRODUIT + " TEXT" +
-            " " + KEY_ENERGIE_PRODUIT + " INT" +
-            " " + KEY_MATIERE_GRASSE_PRODUIT + " INT" +
-            " " + KEY_ACIDES_GRAS_PRODUIT + " INT" +
-            " " + KEY_GLUCIDES_PRODUIT + " INT" +
-            " " + KEY_SUCRES_PRODUIT + " INT" +
-            " " + KEY_PROTEINE_PRODUIT + " INT" +
-            " " + KEY_SEL_PRODUIT + " INT" +
-            " " + KEY_SODIUM_PRODUIT + " INT" +
+            " " + KEY_LIBELLE_PRODUIT + " TEXT," +
+            " " + KEY_CODE_BARRE_PRODUIT + " INT," +
+            " " + KEY_QUANTITE_PRODUIT + " INT," +
+            " " + KEY_INGREDIENT_PRODUIT + " TEXT," +
+            " " + KEY_ENERGIE_PRODUIT + " INT," +
+            " " + KEY_MATIERE_GRASSE_PRODUIT + " INT," +
+            " " + KEY_ACIDES_GRAS_PRODUIT + " INT," +
+            " " + KEY_GLUCIDES_PRODUIT + " INT," +
+            " " + KEY_SUCRES_PRODUIT + " INT," +
+            " " + KEY_PROTEINE_PRODUIT + " INT," +
+            " " + KEY_SEL_PRODUIT + " INT," +
+            " " + KEY_SODIUM_PRODUIT + " INT," +
             " " + KEY_LIEN_PRODUIT + " TEXT" +
             ");";
     private MySQLite maBaseSQLite; // notre gestionnaire du fichier SQLite
@@ -138,7 +138,6 @@ public class ProduitManager {
             p.setSel_produit(c.getInt(c.getColumnIndex(KEY_SEL_PRODUIT)));
             p.setSodium_produit(c.getInt(c.getColumnIndex(KEY_SODIUM_PRODUIT)));
             p.setLien_produit(c.getString(c.getColumnIndex(KEY_LIEN_PRODUIT)));
-
 
             c.close();
         }
